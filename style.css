@@ -1,0 +1,56 @@
+body{
+    margin: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    color: #454959;
+    line-height: 1.5;
+  }
+  a {
+    color: #cc4e13;
+    text-decoration: none;
+  }
+  h1, h2 {
+    font-family: "Abolition Regular", Impact, Charcoal, sans-serif;
+    font-weight: normal;
+    line-height: 1.1;
+  }
+  h1 {
+    font-size: 4rem;
+    text-shadow: 1px 2px 3px rgba(0, 10, 30, .5);
+  }
+  h1::after {
+    content: /2193;
+    display: block;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  img {
+    width: 100%; /* responsive images */
+  }
+  
+  
+  /* Main Styles --------------------- */
+  header {
+    padding: 10vh 1rem;
+    margin: -1rem -1rem 1rem;
+    background: url(../img/mountains.jpg) center / cover no-repeat #f3753b;
+    background-blend-mode: multiply;
+    color: white;
+  }
+  header, footer {
+    text-align: center;
+  }
+  .title {
+    letter-spacing: 1px;
+  }
+  
+  
+  main {
+    hyphens: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
