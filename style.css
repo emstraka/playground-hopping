@@ -1,7 +1,7 @@
 body{
     margin: 1rem;
-    font-family: 'Work Sans', sans-serif;
-    color: #454959;
+    font-family: 'Lora', serif;
+    color: black;
     line-height: 1.5;
   }
   a {
@@ -9,7 +9,7 @@ body{
     text-decoration: none;
   }
   h1, h2 {
-    font-family: "Abolition Regular", Impact, Charcoal, sans-serif;
+    font-family: "Lora", Impact, black, serif;
     font-weight: normal;
     line-height: 1.1;
   }
@@ -36,9 +36,9 @@ body{
   header {
     padding: 10vh 1rem;
     margin: -1rem -1rem 1rem;
-    background: url(../img/mountains.jpg) center / cover no-repeat #f3753b;
+    background: center / cover no-repeat firebrick;
     background-blend-mode: multiply;
-    color: white;
+    color: rgb(5, 0, 0);
   }
   header, footer {
     text-align: center;
