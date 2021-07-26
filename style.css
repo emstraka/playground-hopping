@@ -9,12 +9,12 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 1.25em; /* 20px on most screens */
+  font-size: 1.25em;
 }
 body{
   margin: 1rem;
   font-family: 'Work Sans', sans-serif;
-  color: #454959;
+  color: black;
   line-height: 1.5;
 }
 a {
@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 h1, h2 {
-  font-family: "Abolition Regular", Impact, Charcoal, sans-serif;
+  font-family: "Abolition Regular", Impact, black, sans-serif;
   font-weight: normal;
   line-height: 1.1;
 }
@@ -43,6 +43,17 @@ h3 {
 img {
   width: 100%; /* responsive images */
 }
+
+/*list item checkmarks*/
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: '✓';
+  color: green;
+}
+  
 
 
 /* Main Styles --------------------- */
