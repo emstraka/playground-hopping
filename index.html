@@ -165,10 +165,6 @@
           <input type="email" class="email"/>
         </label>
         <label>
-          Subject
-          <input type="text" class="subject"/>
-        </label>
-        <label>
           Message
           <textarea></textarea>
         </label>
@@ -180,24 +176,22 @@
     </section>-->
 
     <div class="container">
-      <form id="contact" class="form">
+      <form onsubmit="return validateForm()" id="contact" class="form">
           <h4>Contact Me:</h4>
           
           <div class="form-field">
               <label for="email">Email:</label>
-              <input type="email" name="email" id="email" autocomplete="off">
-              <small></small>
+              <input type="email" name="email" id="userEmail">
           </div>
 
           <div class="form-field">
             <label for="message">Message:</label>
-            <textarea></textarea>
-            <small></small>
-        </div>
+            <input type="text" name="message" id="message">
+          </div>
 
 
           <div class="form-field">
-              <input type="submit" value="Send">
+              <input type="submit" value="Submit">
           </div>
       </form>
   </div>
