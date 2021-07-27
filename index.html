@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Playground Hopping around Louisville</title>
-  <link href="<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="/main.js"></script>
 </head>
 <body>
 
@@ -156,9 +154,9 @@
           </div>
         </div>
       </div>
-
     </section>
 
+    <!--JS
     <section>
       <h5 id="contact">Contact Me:</h5>
       <form>
@@ -174,9 +172,35 @@
           Message
           <textarea></textarea>
         </label>
+        <div class="status">
+
+        </div>
         <button type="submit">Submit</button>
       </form>
-    </section>
+    </section>-->
+
+    <div class="container">
+      <form id="contact" class="form">
+          <h4>Contact Me:</h4>
+          
+          <div class="form-field">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" autocomplete="off">
+              <small></small>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message:</label>
+            <textarea></textarea>
+            <small></small>
+        </div>
+
+
+          <div class="form-field">
+              <input type="submit" value="Send">
+          </div>
+      </form>
+  </div>
 
     
     
@@ -192,4 +216,6 @@
   <p>&copy;2021</p>
 </footer>
 
+<script src="main.js"></script>
+</body>
 </html>
