@@ -1,9 +1,3 @@
-/* Web Fonts ----------------------- */
-@font-face {
-  font-family: "Abolition Regular";
-  src: url('../fonts/abolition-regular-webfont.woff') format('woff');
-}
-
 /* Base Styles --------------------- */
 * {
   box-sizing: border-box;
@@ -41,7 +35,7 @@ h3 {
   font-size: 1.25rem;
 }
 h4 {
-  font-size: 1.25rem;
+  font-style: italic;
 }
 img {
   width: 100%; /* responsive images */
@@ -90,14 +84,7 @@ section {
   padding: 4rem 0;
   border-sizing: 1px dashed #9599a9;
 }
-#wildlife {
-  padding: 20% 15%;
-  border-top: 12px solid #f3753b;
-  border-radius: 12px 12px 0 0;
-  background: url(../img/bear.jpg) center / cover #454959;
-  color: white;
-  box-shadow: inset 0 0 20px 10px rgba(0, 10, 30, .8)
-}
+
 .callout {
   display: block;
   width: 250px;
