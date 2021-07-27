@@ -32,7 +32,11 @@ h4 {
   font-style: italic;
 }
 img {
-  width: 100%; /* responsive images */
+  width: 100%; 
+}
+
+div.mom {
+  display:inline-block;
 }
 
 /*list item checkmarks*/
