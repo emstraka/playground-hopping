@@ -18,22 +18,13 @@ a {
   color: black;
   text-decoration: none;
 }
-h1, h2 {
+h2 {
   font-family: "Abolition Regular", Impact, black, sans-serif;
+  font-size: 2.5rem;
   font-weight: normal;
   line-height: 1.1;
 }
-h1 {
-  font-size: 4rem;
 
-}
-h1::after {
-  content: /2193;
-  display: block;
-}
-h2 {
-  font-size: 2.5rem;
-}
 h3 {
   font-size: 1.25rem;
 }
@@ -70,39 +61,31 @@ header {
   background-blend-mode: multiply;
   color: white;
 }
+
 header, footer {
   text-align: center;
 }
+
+footer{
+  line-height: 5px;
+}
+
 .title {
   letter-spacing: 1px;
 }
-
 
 main {
   hyphens: auto;
   max-width: 1000px;
   margin: 0 auto;
 }
+
 section {
   padding: 4rem 0;
   border-sizing: 1px dashed #9599a9;
 }
 
-.callout {
-  display: block;
-  width: 250px;
-  padding: .25rem 1rem;
-  border-radius: 20px/10px;
-  margin: 1rem auto;
-  box-shadow: 3px 4px 5px rgba(0, 10, 30, .8);
-  background-image: linear-gradient(#b40 0%, #d63 50%, #c51 51%, #e74 100%);
-  color: white;
-  text-align: center;
-  font-size: 1.25rem;
-}
-.column:first-child {
-  margin-bottom: 4rem;
-}
+
 
 /* Media Queries ------------------- */
 @media screen and (min-width: 720px) {
