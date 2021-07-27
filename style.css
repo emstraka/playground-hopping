@@ -40,6 +40,9 @@ h2 {
 h3 {
   font-size: 1.25rem;
 }
+h4 {
+  font-size: 1.25rem;
+}
 img {
   width: 100%; /* responsive images */
 }
@@ -49,10 +52,16 @@ ul {
   list-style: none;
 }
 
-ul li:before {
+.pros li:before {
   content: '✓';
   color: green;
 }
+
+.cons li:before {
+  content: '❌'
+}
+
+
   
 
 
