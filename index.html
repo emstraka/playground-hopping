@@ -156,42 +156,25 @@
       </div>
     </section>
 
-    <!--JS
-    <section>
-      <h5 id="contact">Contact Me:</h5>
-      <form>
-        <label>
-          E-mail
-          <input type="email" class="email"/>
-        </label>
-        <label>
-          Message
-          <textarea></textarea>
-        </label>
-        <div class="status">
-
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </section>-->
+    <!--JS-->
 
     <div class="container">
       <form onsubmit="return validateForm()" id="contact" class="form">
           <h4>Contact Me:</h4>
           
           <div class="form-field">
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="userEmail">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="userEmail">
           </div>
 
           <div class="form-field">
             <label for="message">Message:</label>
-            <input type="text" name="message" id="message">
+            <textarea name="message" id="message"></textarea>
           </div>
 
 
           <div class="form-field">
-              <input type="submit" value="Submit">
+            <input type="submit" value="Submit">
           </div>
       </form>
   </div>
