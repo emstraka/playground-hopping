@@ -1,6 +1,8 @@
-/* Base Styles --------------------- */
+/* General Styles --------------------- */
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
+  outline: 2px solid red;
+  margin: 10px;
 }
 html {
   font-size: 1.25em;
@@ -13,13 +15,13 @@ body{
   line-height: 1.5;
 }
 
-nav{
-  text-align: center;
-}
-
 a {
   color: black;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 h2 {
@@ -38,8 +40,21 @@ h4 {
 }
 
 img {
-  width: 100%; 
+  width: 50%; 
 }
+
+ul.nav {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  display: flex;
+  flex: 0 1 auto;
+  list-style-type: none;
+} 
 
 
 /*list item checkmarks*/
@@ -57,7 +72,34 @@ ul {
 }
 
 
-  
+/*Utilities*/
+div.kids {
+  display: flex;
+  justify-content: center;
+  padding:50px 100px;
+ 
+}
+div.mom {
+  display: flex;
+  justify-content: center;
+  padding:50px 100px;
+  float:right;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.eastover {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  align-content: center;
+}
 
 
 /* Main Styles --------------------- */
@@ -78,7 +120,7 @@ footer{
 }
 
 .title {
-  letter-spacing: 1px;
+  letter-spacing: 5px;
 }
 
 main {
@@ -87,6 +129,26 @@ main {
   margin: 0 auto;
 }
 
+section {
+  display: flex;
+  height:min-content;
+ 
+  justify-content:space-around;
+
+}
+
+
+/*.kids div {
+  display:grid;
+  justify-content:stretch;
+
+}
+
+.mom div {
+  display:grid;
+  justify-content:space-around;*/
+
+
 
 /*JS function*/
 label, input, textarea {
@@ -94,62 +156,5 @@ label, input, textarea {
 }
 
 
-/*taken from https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Media_objects*/
-@media (min-width: 500px) {
-  .media {
-      display: grid;
-      grid-template-columns: fit-content(200px) 1fr;
-      grid-template-rows:1fr auto;
-      grid-template-areas:
-          "image content"
-          "image footer";
-      grid-gap: 20px;
-      margin-bottom: 4em;
-  }
 
-  .media-flip {
-      grid-template-columns: 1fr fit-content(250px);
-      grid-template-areas:
-          "content image"
-          "footer image";
-  }
 
-  .img {
-      grid-area: image;
-  }
-
-  .content {
-      grid-area: content;
-  }
-
-}
-
-/* Media Queries ------------------- */
-@media screen and (min-width: 720px) {
-  header {
-    padding: 20vh 1rem;
-  }
-  h1 {
-    font-size: 5rem;
-  }
-  h1::after {
-    margin-top: 1rem;
-  }
-  .title {
-    font-size: 1.25rem;
-  }
-  .intro {
-    padding: 0 15%;
-    font-size: 1.1rem;
-  }
-  .column {
-    display: inline-block;
-    width: 48%;
-    margin-right: -4px;
-  }
-  .column:first-child {
-    margin-right: calc(4%-4px);
-    margin-bottom: 0; 
-  }
-
-}
