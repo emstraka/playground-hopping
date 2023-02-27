@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
 
@@ -19,73 +20,137 @@
         <li><a href="#about">About Me</a></li>
         <li><a href= "#brown">Brown Park</a></li>
         <li><a href="#eastover">Eastover Park</a></li>
+        <li><a href="#bigrock">Big Rock Park</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
     </nav>
   </header>
-
-  
-  
-  
   
   <main>
-    <section>
-      <div id="about" class="about">
-        <h2>About Me</h2>
-        <img src="images/kids_and_mom_1.png" alt="mom with two kids on the beach">
-        <p>Hi! My name is Emily and I have two kids, Caroline and Austin, who both love a good playground. I love a good playground too, but while my kids are checking to see if the playground has monkey bars and spinners, I'm checking out the parking lot and bathroom situation. I decided to create this website as a go-to source for parents who are looking for a playground in Louisville that meets their kids' needs while also providing everything the parents need to feel safe and comfortable.</p> 
-      </div> 
-      
+    <section class="flex park-container" id="about">
+      <div class="flex park-content">
+        <div class="profile">
+          <h2>About Me</h2>
+          <img src="images/kids_and_mom_1.png" alt="mom with two kids on the beach" class="about-photo">
+        </div>
+        <p>Hi! My name is Emily and I have two kids, Caroline and Austin, who both love a good playground. I love a good playground too, but while my kids are checking to see if the playground has monkey bars and spinners, I'm checking out the parking lot and bathroom situation. I decided to create this website as a go-to source for parents who are looking for a playground in Louisville that meets their kids' needs while also providing everything the parents need to feel safe and comfortable.</p>
+      </div>
     </section>
 
     
-    <!--Brown Park content
-    <section id="brown">
-      <h2>Brown Park</h2>
-      <h4>Kresge Way & Browns Lane, St Matthews, KY 40207</h4>
-      
-      <div class="img">
-        <img src="images/brown_park.JPG" alt="two kids climbing on a jungle gym at a playground">
-      </div>-->
-  
-          
-        
+    <!--Brown Park content-->
+    <section class="flex park-container" id="brown">
 
-    <!--Eastover Park content-->
-    <section>
-      <div id="eastover" class="eastover">
-        <div>
-          <h2>Eastover Park</h2>
-          <h4>118 Sacred Heart Ln, Louisville, KY 40206</h4>
-          <img src="images/eastover.JPG" alt="two kids climbing on a playground structure">
+      <div class="flex park-content">  
+
+        <div class="flex park-main">
+          <h2>Brown Park</h2>
+          <h5>1000 Browns Lane, Louisville, KY 40207</h5>
+            <img id="brown-img" src="images/brown_park.JPG" alt="two kids climbing on a playground structure">
         </div>
         
-        <div class="kids">
+        <div class="flex park-column">
           <h3>What the kids say:</h3>
           <ul>
-           <div class="list"> 
-            <li>Monkey bars</li>
-            <li>Swings</li>
-            <li>Lots of things to climb</li>
-            <li><strong>NO</strong> spinner</li>
-            <li><strong>NO</strong> zip line</li>
-            <li><strong>NO</strong> water feature</li>
-          </div>
+            <li class="pros">Fun slides</li>
+            <li class="pros">Spinner</li>
+            <li class="pros">Lots of things to climb</li>
+            <li class="cons">No zip line</li>
+            <li class="cons">No swings</li>
+            <li class="cons">No water feature</li>
           </ul>
         </div>
-      </div>
+      
+        <div class="flex park-column">
+          <h3>What I say:</h3>
+          <ul>
+            <li class="pros">Good visual of entire playground</li>
+            <li class="pros">Covered pavillion nearby</li>
+            <li class="pros">Clean bathrooms</li>
+            <li class="cons">No shade on playground</li>
+            <li class="cons">Parking lot can be hard to navigate</li>
+          </ul>
+        </div>
         
-      <div class="mom">
-        <h3>What I say:</h3>
-        <ul>
-          <li>Good visual of entire playground</li>
-          <li>Parking lot is close to playground</li>
-          <li><strong>NO</strong> shade on playground</li>
-          <li><strong>NO</strong> bathrooms</li>
-        </ul>
       </div>
+
+    </section>
+
+<!--Eastover Park content-->
+    <section class="flex park-container" id="eastover">
+
+      <div class="flex park-content">  
+
+        <div class="flex park-main">
+          <h2>Eastover Park</h2>
+          <h5>118 Sacred Heart Ln, Louisville, KY 40206</h5>
+          <img id="eastover-img"src="images/eastover.JPG" alt="two kids climbing on a playground structure" onclick="changeImage('eastover-img')">
+        </div>
+        
+        <div class="flex park-column">
+          <h3>What the kids say:</h3>
+          <ul>
+            <li class="pros">Monkey bars</li>
+            <li class="pros">Swings</li>
+            <li class="pros">Lots of things to climb</li>
+            <li class="cons">No spinner</li>
+            <li class="cons">No zip line</li>
+            <li class="cons">No water feature</li>
+          </ul>
+        </div>
+      
+        <div class="flex park-column">
+          <h3>What I say:</h3>
+          <ul>
+            <li class="pros">Good visual of entire playground</li>
+            <li class="pros">Parking lot is close to playground</li>
+            <li class="cons">No shade on playground</li>
+            <li class="cons">No bathrooms</li>
+            <li class="cons">Limited hours during weekdays since this is also a school playground</li>
+          </ul>
+        </div>
         
       </div>
+
+    </section>
+  
+          
+<!--Big Rock Park content-->
+    <section class="flex park-container" id="bigrock">
+
+      <div class="flex park-content">  
+
+        <div class="flex park-main">
+          <h2>Big Rock Park</h2>
+          <h5>2199 Park Boundary Rd, Louisville, KY 40205</h5>
+          <img id="big-rock-img" src="images/big_rock.JPG" alt="two kids climbing on a playground structure">
+        </div>
+        
+        <div class="flex park-column">
+          <h3>What the kids say:</h3>
+          <ul>
+            <li class="pros">The creek!!</li>
+            <li class="pros">Swings</li>
+            <li class="pros">Fake rocks to climb</li>
+            <li class="cons">No spinner</li>
+            <li class="cons">No zip line</li>
+            <li class="cons">No big slides</li>
+          </ul>
+        </div>
+      
+        <div class="flex park-column">
+          <h3>What I say:</h3>
+          <ul>
+            <li class="pros">Good visual of entire playground</li>
+            <li class="pros">Parking lot is close to playground</li>
+            <li class="cons"></li>
+            <li class="cons">Your kids will want to get wet</li>
+            <li class="cons">The worst bathrooms</li>
+          </ul>
+        </div>
+        
+      </div>
+
     </section>
 
     <!--JS-->
@@ -122,7 +187,7 @@
 
 <footer>
   <p><a href="#top">Back to top</a></p>
-  <p>&copy;2021</p>
+  <p>&copy;2023</p>
 </footer>
 
 <script src="main.js"></script>

@@ -1,9 +1,9 @@
 /* General Styles --------------------- */
-* {
+/** {
   box-sizing:border-box;
   outline: 2px solid red;
   margin: 10px;
-}
+}*/
 html {
   font-size: 1.25em;
 }
@@ -16,12 +16,31 @@ body{
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+main {
+}
+
+section {
+  border-bottom: solid 1px #000;
+  padding-bottom: 40px;
 }
 
 h1 {
   font-size: 3rem;
+  margin: 0;
 }
 
 h2 {
@@ -29,18 +48,26 @@ h2 {
   font-size: 2.5rem;
   font-weight: normal;
   line-height: 1.1;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.25rem;
+  margin: 0;
 }
 
 h4 {
   font-style: italic;
+  margin: 0;
 }
 
-img {
-  width: 50%; 
+h5 {
+  margin: 0;
+}
+
+.park-main img {
+  min-width: 50%; 
+  max-width: 100%;
 }
 
 ul.nav {
@@ -60,41 +87,83 @@ li {
 /*list item checkmarks*/
 ul {
   list-style: none;
+  padding-inline-start: 0;
 }
 
-.pros li:before {
+li {
+  margin-bottom: 25px;
+}
+
+.pros:before {
   content: '✓';
   color: green;
+  margin-right: 5px;
 }
 
-.cons li:before {
-  content: '❌'
+.cons:before {
+  content: '❌';
+  margin-right: 2px;
 }
 
 
 /*Utilities*/
-div.kids {
-  display: flex;
-  justify-content: center;
-  padding:50px 100px;
- 
-}
-div.mom {
-  display: flex;
-  justify-content: center;
-  padding:50px 100px;
-  float:right;
+
+
+.about-container {
+  background-color: bisque;
 }
 
-.about {
+.about-content {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-photo {
+  width: auto;
+  border-radius: 50%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.park-container {
+  background-color: burlywood;
+}
+
+.park-content {
+  margin-top: 40px;
+  gap:25px;
+}
+
+@media only screen and (max-width: 850px) {
+  .park-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.park-main {
+  flex-direction: column;
   align-items: center;
 }
 
-.eastover {
-  display: flex;
-  align-items: center;
+@media only screen and (max-width: 850px) {
+  .park-main {
+    align-items: flex-start;
+  }
 }
+
+.park-column {
+  flex-direction: column;
+  min-width: 250px;
+}
+
+
 
 .list {
   display: flex;
@@ -104,7 +173,7 @@ div.mom {
 
 /* Main Styles --------------------- */
 header {
-  padding: 10vh 1rem;
+  padding: 5vh 1rem;
   margin: -1rem -1rem 1rem;
   background: url(images/big_rock.JPG) center / cover no-repeat #6e88be;
   background-blend-mode: multiply;
@@ -125,7 +194,7 @@ footer{
 
 main {
   hyphens: auto;
-  max-width: 1000px;
+  
   margin: 0 auto;
 }
 
@@ -137,6 +206,9 @@ section {
 
 }
 
+.profile {
+  width: 300px;
+}
 
 /*.kids div {
   display:grid;
