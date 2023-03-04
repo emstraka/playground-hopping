@@ -6,6 +6,7 @@
 }*/
 html {
   font-size: 1.25em;
+  background-color: rgba(120, 192, 224, .5)
 }
 
 body{
@@ -28,9 +29,6 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-}
-
-main {
 }
 
 section {
@@ -67,7 +65,7 @@ h5 {
 
 .park-main img {
   min-width: 50%; 
-  max-width: 100%;
+  max-width: 50%;
 }
 
 ul.nav {
@@ -77,11 +75,21 @@ ul.nav {
   justify-content: space-around;
 }
 
+nav > ul > li > a:hover {
+  color: black;
+  background-color: rgba(120, 192, 224)
+  
+}
+
 li {
   display: flex;
   flex: 0 1 auto;
   list-style-type: none;
 } 
+
+.profile h2 {
+  text-align: center;
+}
 
 
 /*list item checkmarks*/
@@ -109,9 +117,9 @@ li {
 /*Utilities*/
 
 
-.about-container {
+/*.about-container {
   background-color: bisque;
-}
+}*/
 
 .about-content {
   display: flex;
@@ -121,7 +129,8 @@ li {
 }
 
 .about-photo {
-  width: auto;
+  width: inherit;
+  border: 2px solid #000;
   border-radius: 50%;
 }
 
@@ -132,7 +141,8 @@ li {
 }
 
 .park-container {
-  background-color: burlywood;
+  /*background-color: #78c0e0*/
+
 }
 
 .park-content {
@@ -140,10 +150,24 @@ li {
   gap:25px;
 }
 
+.park-content p {
+ padding-top: 7%;
+}
+
+.hamburger {
+  display: none;
+}
+
 @media only screen and (max-width: 850px) {
   .park-content {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .main-nav {
+    display: none;
+  }
+  .hamburger {
+    display:block;
   }
 }
 
@@ -173,7 +197,8 @@ li {
 
 /* Main Styles --------------------- */
 header {
-  padding: 5vh 1rem;
+  padding: 40px;
+  padding-bottom: 0;
   margin: -1rem -1rem 1rem;
   background: url(images/big_rock.JPG) center / cover no-repeat #6e88be;
   background-blend-mode: multiply;
@@ -186,6 +211,10 @@ header, footer {
 
 footer{
   line-height: 10px;
+}
+
+footer a {
+  color: #000;
 }
 
 .title {
