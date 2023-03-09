@@ -32,7 +32,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 section {
-  border-bottom: solid 1px #000;
+  border-bottom: dotted 5px #000;
   padding-bottom: 40px;
 }
 
@@ -45,7 +45,7 @@ h2 {
   font-family: "Abolition Regular", Impact, black, sans-serif;
   font-size: 2.5rem;
   font-weight: normal;
-  line-height: 1.1;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -169,16 +169,15 @@ li {
   .hamburger {
     display:block;
   }
-}
 
-.park-main {
-  flex-direction: column;
-  align-items: center;
-}
+  /*.park-main {
+    flex-direction: column;
+    align-items: center;
+  }*/
 
-@media only screen and (max-width: 850px) {
-  .park-main {
-    align-items: flex-start;
+  .profile {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -186,6 +185,8 @@ li {
   flex-direction: column;
   min-width: 250px;
 }
+
+
 
 
 
@@ -203,6 +204,7 @@ header {
   background: url(images/big_rock.JPG) center / cover no-repeat #6e88be;
   background-blend-mode: multiply;
   color: white;
+  box-shadow: 10px 10px 5px 5px #000;
 }
 
 header, footer {
