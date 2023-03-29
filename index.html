@@ -13,31 +13,36 @@
 <body>
 
   <header id="top">
-    <span class="title">Playground-Hopping Around</span>
-    <h1>Louisville, Kentucky</h1>
-    <nav class="main-nav">
+    <h1>Playground-Hopping Around</h1>
+    <h2>Louisville, Kentucky</h2>
+    <nav class="navbar">
+      <div class="ham">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </div>
       <ul class="nav">        
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#brown">Brown Park</a></li>
-        <li><a href="#eastover">Eastover Park</a></li>
-        <li><a href="#bigrock">Big Rock Park</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+        <li class="list-item"><a href="#about" class="nav-link">About Me</a></li>
+        <li class="list-item"><a href="#brown" class="nav-link">Brown Park</a></li>
+        <li class="list-item"><a href="#eastover" class="nav-link">Eastover Park</a></li>
+        <li class="list-item"><a href="#bigrock" class="nav-link">Big Rock Park</a></li>
       </ul>
     </nav>
-    <button class="hamburger">Hamburger</button>
   </header>
+
   
   <main>
     <section class="flex park-container" id="about">
       <div class="flex park-content">
         <div class="profile">
           <h2>About Me</h2>
-          <img src="images/kids_and_mom.jpg" alt="mom with two kids on the beach" class="about-photo">
+          <img src="images/kids_and_mom.jpg" alt="mom with two kids" class="about-photo">
         </div>
         <p>Hi! My name is Emily and I have two kids, Caroline and Austin, who both love a good playground. I love a good playground too, but while my kids are checking to see if the playground has monkey bars and spinners, I'm checking out the parking lot and bathroom situation. I decided to create this website as a go-to source for parents who are looking for a playground in Louisville that meets their kids' needs while also providing everything the parents need to feel safe and comfortable.</p>
       </div>
     </section>
 
+   
     
     <!--Brown Park content-->
     <section class="flex park-container" id="brown">
@@ -46,7 +51,7 @@
 
         <div class="flex park-main">
           <h2>Brown Park</h2>
-          <h5>1000 Browns Lane, Louisville, KY 40207</h5>
+          <span><a href="https://www.stmatthewsky.gov/brown-park/" target="_blank">1000 Browns Lane, Louisville, KY 40207</a></span>
             <img id="brown-img" src="images/brown_park.JPG" alt="two kids climbing on a playground structure">
         </div>
         
@@ -84,8 +89,8 @@
 
         <div class="flex park-main">
           <h2>Eastover Park</h2>
-          <h5>118 Sacred Heart Ln, Louisville, KY 40206</h5>
-          <img id="eastover-img"src="images/eastover.JPG" alt="two kids climbing on a playground structure" onclick="changeImage('eastover-img')">
+          <span><a href="https://louisvilleky.gov/government/parks/park-list/eastover-park" target="_blank">118 Sacred Heart Ln, Louisville, KY 40206</a></span>
+          <img id="eastover-img" src="images/eastover.JPG" alt="two kids climbing on a playground structure">
         </div>
         
         <div class="flex park-column">
@@ -123,8 +128,8 @@
 
         <div class="flex park-main">
           <h2>Big Rock Park</h2>
-          <h5>2199 Park Boundary Rd, Louisville, KY 40205</h5>
-          <img id="big-rock-img" src="images/big_rock.JPG" alt="two kids climbing on a playground structure">
+          <span><a href="https://www.olmstedparks.org/our-parks/cherokee-park/" target="_blank">2199 Park Boundary Rd, Louisville, KY 40205</a></span>
+          <img id="big-rock-img" src="images/big_rock.JPG" alt="playground with child">
         </div>
         
         <div class="flex park-column">
@@ -191,6 +196,6 @@
   <p>&copy;2023</p>
 </footer>
 
-<script src="main.js"></script>
+<!--<script src="main.js"></script>-->
 </body>
 </html>

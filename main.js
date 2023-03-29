@@ -1,4 +1,13 @@
-function validateForm(){
+
+
+
+
+
+
+
+
+
+/*function validateForm(){
     const userEmail = document.getElementById('userEmail').value;
     const userMsg = document.getElementById('message').value;
 
@@ -12,4 +21,4 @@ function validateForm(){
         alert('Please enter a valid email address and message.')
         return false
     }
-}
+}*/
