@@ -15,16 +15,6 @@ a {
   text-decoration: none;
 }
 
-/*button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}*/
-
 section {
   border-bottom: dotted 5px #1f1f1f;
   padding-bottom: 40px;
@@ -57,18 +47,6 @@ h5 {
   margin: 0;
 }
 
-ul.nav {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-nav > ul > li > a:hover {
-  color: #1f1f1f;
-  background-color: rgba(120, 192, 224);
-  border-radius: 5px;
-}
 
 li {
   display: flex;
@@ -80,7 +58,39 @@ li {
   text-align: center;
 }
 
+/*hamburger menu styles*/
+.menu { 
+  display:none;
+  position: absolute;
+  background-color:rgba(120, 192, 224);
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+}
+  
+.menu li:hover {
+  display: inline-block;
+  background-color:rgba(120, 192, 224);
+  transition: 0.3s ease;
+}
+  
+.menu li + li {
+  margin-top: 12px;
+}
 
+input[type=checkbox]:checked ~ .menu{
+  display: block;
+}
+  
+.hamburger {
+  display: block;
+}
+  
+
+  
+
+  
 /*list item checkmarks*/
 ul {
   list-style: none;
@@ -148,17 +158,6 @@ li {
   flex-direction: column;
 }
 
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-}
-
 .park-content {
   flex-direction: column;
   align-items: left;
@@ -189,10 +188,27 @@ li {
 /* Media Queries --------------------- */
 @media only screen and (min-width: 768px) {
 
-  
+.navbar {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav > ul > li > a:hover {
+  color: #1f1f1f;
+  background-color: rgba(120, 192, 224);
+  border-radius: 5px;
+}
+
+input[type=checkbox]{
+  display: none;
+}
 
 .hamburger {
   display: none;
+  font-size: 24px;
+  user-select: none;
 }
 
 .park-content {
@@ -221,10 +237,13 @@ li {
 }
 }
 
-.list {
+/*.list {
   display: flex;
   align-content: center;
 }
+i dont know what this is*/
+
+
 
 
 /* Main Styles --------------------- */
@@ -241,32 +260,6 @@ header {
 header, footer {
   text-align: center;
 }
-
-/*Properties for Nav-bar*/
-.navbar{
-  display:flex;
-  top:0;
-  height:10vh;
-  justify-content:space-between;
-  align-items:center;
-  padding:0px 20px;
-  background:grey;
-}
-
-.nav{
-  display:flex;
-  justify-content:space-between;
-  }
-  .list-item {
-  padding:10px;
-  list-style:none;
-  }
-  .nav-link{
-  color:inherit;
-  text-decoration:none;
-  }
-
-
 
 footer{
   line-height: 10px;
@@ -296,22 +289,14 @@ section {
   width: 300px;
 }
 
-/*.kids div {
-  display:grid;
-  justify-content:stretch;
-
-}
-
-.mom div {
-  display:grid;
-  justify-content:space-around;*/
 
 
 
-/*JS function*/
+
+/*JS function
 label, input, textarea {
   display: block;
-}
+}*/
 
 
 
