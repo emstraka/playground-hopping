@@ -59,38 +59,54 @@ li {
 }
 
 /*hamburger menu styles*/
-.menu { 
-  display:none;
-  position: absolute;
-  background-color:rgba(120, 192, 224);
-  right: 0;
-  left: 0;
-  text-align: center;
-  padding: 16px 0;
-}
-  
-.menu li:hover {
-  display: inline-block;
-  background-color:rgba(120, 192, 224);
-  transition: 0.3s ease;
-}
-  
-.menu li + li {
-  margin-top: 12px;
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
-input[type=checkbox]:checked ~ .menu{
-  display: block;
-}
-  
 .hamburger {
   display: block;
 }
-  
 
-  
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
 
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
   
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-link {
+  margin: 16px 0;
+}  
+
+.nav-menu.active {
+  left: 0;
+}
+
+
+
 /*list item checkmarks*/
 ul {
   list-style: none;
@@ -185,68 +201,11 @@ li {
   min-width: 250px;
 }
 
-/* Media Queries --------------------- */
-@media only screen and (min-width: 768px) {
-
-.navbar {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-nav > ul > li > a:hover {
-  color: #1f1f1f;
-  background-color: rgba(120, 192, 224);
-  border-radius: 5px;
-}
-
-input[type=checkbox]{
-  display: none;
-}
-
-.hamburger {
-  display: none;
-  font-size: 24px;
-  user-select: none;
-}
-
-.park-content {
-  flex-direction: column;
-  align-items: center;
-}
-
-.park-main {
-  flex-direction: column;
-  align-items: center;
-  width: min-content;
-}
-
-.park-main img {
-  width: 100%;
-}
-
-.profile {
-  flex-direction: column;
-  align-items: center;
-}
-
-.park-column {
-  flex-direction: column;
-  min-width: 250px;
-}
-}
-
-/*.list {
-  display: flex;
-  align-content: center;
-}
-i dont know what this is*/
-
 
 
 
 /* Main Styles --------------------- */
+
 header {
   padding: 40px;
   padding-bottom: 0;
@@ -275,7 +234,6 @@ footer a {
 
 main {
   hyphens: auto;
-  
   margin: 0 auto;
 }
 
@@ -289,6 +247,69 @@ section {
   width: 300px;
 }
 
+
+/* Media Queries --------------------- */
+@media only screen and (min-width: 768px) {
+
+  .navbar {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav > ul > li > a:hover {
+    color: #1f1f1f;
+    background-color: rgba(120, 192, 224);
+    border-radius: 5px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+  
+  
+  .park-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .park-main {
+    flex-direction: column;
+    align-items: center;
+    width: min-content;
+  }
+  
+  .park-main img {
+    width: 100%;
+  }
+  
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .park-column {
+    flex-direction: column;
+    min-width: 250px;
+  }
+  }
 
 
 
