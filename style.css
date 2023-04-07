@@ -294,13 +294,11 @@ nav > ul > li > a:hover {
 
 .park-content {
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .park-main {
   flex-direction: column;
-  align-items: center;
   width: 75%;
 }
 
@@ -313,7 +311,7 @@ nav > ul > li > a:hover {
 }
 }
 
-/*lap laptop/desktop*/
+/*laptop/desktop*/
 @media only screen and (min-width: 1024px) {
 nav {
   display: inline;
@@ -371,7 +369,7 @@ nav > ul > li > a:hover {
 
 .park-column {
   flex-direction: column;
-
+  min-width: 25%;
 }
 }
   
