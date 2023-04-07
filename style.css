@@ -58,56 +58,9 @@ li {
   text-align: center;
 }
 
-/*hamburger menu styles*/
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-}
-
-.hamburger {
-  display: block;
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-  
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.nav-menu {
-  position: fixed;
-  left: -100%;
-  top: 70px;
-  gap: 0;
-  flex-direction: column;
-  background-color: #1f1f1f;
-  width: 25%;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.nav-link {
-  margin: 16px 0;
-}  
-
-.nav-menu.active {
-  left: 0;
-}
-
-
 
 /*list item checkmarks*/
+
 ul {
   list-style: none;
   padding-inline-start: 0;
@@ -173,7 +126,7 @@ li {
 
 .park-content {
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   width: 100%;
 }
 
@@ -205,12 +158,12 @@ li {
 
 header {
   padding: 40px;
-  padding-bottom: 0;
+  padding-bottom: 5px;
   margin: -1rem -1rem 1rem;
   background: url(images/big_rock.JPG) center / cover no-repeat #6e88be;
   background-blend-mode: multiply;
   color: white;
-  box-shadow: 0px 5px 5px #000;
+  box-shadow: 0px 5px 20px #000;
 }
 
 header h2 {
@@ -219,6 +172,13 @@ header h2 {
 
 header, footer {
   text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 footer{
@@ -254,37 +214,18 @@ section {
 /*tablet*/
 @media only screen and (min-width: 768px) {
 
-nav {
-  display: inline;
-  width: 100%;
-  margin: 0 auto;
-}
-
-nav ul {
-  display: inline;
-}
-
 .navbar {
+  display: flex;
+  justify-content: space-around;
   color: white;
+}
+
+.nav-links {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-nav > ul > li > a:hover {
-  color: #1f1f1f;
-  background-color: rgba(120, 192, 224);
-  border-radius: 5px;
-}
-
-.hamburger {
-  display: none;
+  gap: 60px;
 }
 
 .profile {
@@ -299,7 +240,7 @@ nav > ul > li > a:hover {
 
 .park-main {
   flex-direction: column;
-  width: 75%;
+  align-items: center;
 }
 
 .park-main img {
@@ -313,24 +254,15 @@ nav > ul > li > a:hover {
 
 /*laptop/desktop*/
 @media only screen and (min-width: 1024px) {
-nav {
-  display: inline;
-  width: 100%;
-  margin: 0 auto;
-}
-
-nav ul {
-  display: inline;
-}
 
 .navbar {
-  color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  color: white;
 }
 
-.nav-menu {
+.nav-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -340,10 +272,6 @@ nav > ul > li > a:hover {
   color: #1f1f1f;
   background-color: rgba(120, 192, 224);
   border-radius: 5px;
-}
-
-.hamburger {
-  display: none;
 }
 
 .park-content {
