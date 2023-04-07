@@ -151,6 +151,20 @@ li {
   min-width: 250px;
 }
 
+/* Hidden div */
+
+button {
+  background-color: rgba(120, 192, 224, .5);
+}
+
+#myDIV {
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
 
 
 

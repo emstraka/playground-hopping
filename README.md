@@ -9,6 +9,8 @@ The top navigation bar features transitions upon hover in the desktop view.
 
 I ran an accessibility check which stated that the Instagram and LinkedIn links at the bottom did not have discernible names so I added aria-labels to the anchor tags describing what they are.
 
+I added a hide/show div at the bottom which revealed my favorite playground upon clicking (you have to click twice the first time to show it).
+
 I ran a pagespeed test and received a score of 76.
 
 
